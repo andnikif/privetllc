@@ -335,6 +335,103 @@ nav {
 }
 
 
+/* --- Edge Section ("Why Not ChatGPT?") --- */
+
+.bg-edge {
+    background: linear-gradient(170deg, #0d1424 0%, #111827 40%, #151a2e 100%);
+}
+
+.bg-edge h2 {
+    color: var(--white);
+}
+
+.edge-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.edge-item {
+    padding: 2rem;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.02);
+    transition: border-color 0.2s;
+}
+
+.edge-item:hover {
+    border-color: rgba(184, 150, 12, 0.25);
+}
+
+.edge-label {
+    display: inline-block;
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--gold);
+    margin-bottom: 1rem;
+}
+
+.edge-item h3 {
+    color: var(--text-light);
+    font-size: 1.15rem;
+    margin-bottom: 0.75rem;
+}
+
+.edge-item p {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    line-height: 1.65;
+}
+
+.edge-item em {
+    color: var(--text-muted);
+    font-style: italic;
+}
+
+.edge-bottom {
+    margin-top: 3rem;
+    padding: 2.5rem;
+    border-radius: 6px;
+    background: rgba(184, 150, 12, 0.06);
+    border: 1px solid rgba(184, 150, 12, 0.15);
+    text-align: center;
+    max-width: 860px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.edge-answer {
+    color: var(--gold);
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-weight: 700;
+}
+
+.edge-bottom p {
+    color: var(--text-light);
+    font-size: 0.95rem;
+    line-height: 1.7;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.edge-bottom p + p {
+    margin-top: 1.25rem;
+}
+
+.edge-tagline {
+    font-weight: 500;
+    color: var(--gold) !important;
+    font-size: 1.05rem !important;
+    line-height: 1.6 !important;
+}
+
+
 /* --- Services Grid --- */
 
 .services-grid {
@@ -606,6 +703,10 @@ footer p {
     /* Sections */
     .section {
         padding: 4rem 0;
+    }
+
+    .edge-grid {
+        grid-template-columns: 1fr;
     }
 
     .services-grid {
