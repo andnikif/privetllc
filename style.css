@@ -578,6 +578,22 @@ nav {
     margin-bottom: 1.25rem;
 }
 
+a.work-card-live {
+    text-decoration: none;
+    display: block;
+    cursor: pointer;
+}
+
+a.work-card-live:hover {
+    border-color: var(--gold);
+}
+
+.badge-live {
+    color: var(--navy) !important;
+    background: var(--gold);
+    border-color: var(--gold) !important;
+}
+
 .work-card h3 {
     color: var(--text-light);
     margin-bottom: 0.75rem;
