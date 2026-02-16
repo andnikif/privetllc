@@ -276,6 +276,32 @@ nav {
 }
 
 
+/* --- Video Section --- */
+
+.video-wrap {
+    max-width: 860px;
+    margin: 0 auto;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* 16:9 */
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid rgba(184, 150, 12, 0.2);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
 /* --- Section Headers --- */
 
 .section h2 {
@@ -439,6 +465,10 @@ nav {
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
     margin-top: 3rem;
+}
+
+.services-grid-3 {
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .card {
@@ -725,7 +755,8 @@ footer p {
         grid-template-columns: 1fr;
     }
 
-    .services-grid {
+    .services-grid,
+    .services-grid-3 {
         grid-template-columns: 1fr;
     }
 
